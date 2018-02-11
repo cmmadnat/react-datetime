@@ -5,8 +5,10 @@ var React = require('react'),
 	DaysView = require('./DaysView'),
 	MonthsView = require('./MonthsView'),
 	YearsView = require('./YearsView'),
-	TimeView = require('./TimeView')
+	TimeView = require('./TimeView'),
+	moment = require('moment')
 	;
+require('moment/locale/th');
 
 var CalendarContainer = createClass({
 	viewComponents: {

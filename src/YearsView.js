@@ -8,6 +8,7 @@ var React = require('react'),
 var DateTimePickerYears = onClickOutside( createClass({
 	render: function() {
 		var year = parseInt( this.props.viewDate.year() / 10, 10 ) * 10;
+		year += 543;
 
 		return React.createElement('div', { className: 'rdtYears' }, [
 			React.createElement('table', { key: 'a' }, React.createElement('thead', {}, React.createElement('tr', {}, [
